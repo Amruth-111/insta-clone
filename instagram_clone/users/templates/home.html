@@ -82,14 +82,17 @@
           <div class="post" id="{{post.id}}">
             <div class="info">
               <div class="user">
-                <div class="profile-pic">
+                <a href="{% url 'view_user_profile' user.id %}">
+                <div class="profile-pic" >
                   <img
                     src="{{ post.user.profile_pic.url }}"
                     alt="{{ post.user.username }}"
                   />
                 </div>
                 <p class="username">{{ post.user.username }}</p>
+              </a>
               </div>
+
               <img
                 src="{% static 'users/css/img/option.PNG' %}"
                 class="options"

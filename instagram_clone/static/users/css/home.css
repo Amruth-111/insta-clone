@@ -425,8 +425,8 @@ body {
 
 
 @media (max-width: 1100px) {
-  .right-col,
-  .search-box {
+  .right-col
+ {
     display: none;
   }
   .nav-wrapper,
